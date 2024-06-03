@@ -10,27 +10,23 @@
 <body>
   <header>
     <h1> Text Analyzer</h1>
+    <p>¡Estudiantes y profesionales! Optimiza tus textos fácilmente contando palabras, caracteres, sumando números y calculando promedios con precisión.</p>
   </header>
 
-  <section>
-    <article>
-      <textarea name="user-input"></textarea>
-    </article>
-  </section>
-
- 
-  <section>
+<div class="text-analyzer">
+  <section class="text-analyzer">
+    <textarea name="user-input"></textarea>
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li class="indicators" data-testid="word-count">Cantidad de palabras:</li>
+      <li class="indicators" data-testid="word-length-average">Promedio longitud:</li>
+      <li class="indicators" data-testid="character-count">Cantidad de caracteres:</li>
+      <li class="indicators" data-testid="character-no-spaces-count">Carateres sin espacios:</li>
+      <li class="indicators" data-testid="number-count">Cantidad de números:</li>
+      <li class="indicators" data-testid="number-sum">Suma de números:</li>
     </ul>
-    <button id="reset-button"></button>
+      <button id="reset-button">Comenzar de nuevo</button>
   </section>
-
+</div>
 
   <footer>
     <p>Alexandra Alarcón</p>
