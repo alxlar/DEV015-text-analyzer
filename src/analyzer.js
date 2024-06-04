@@ -12,7 +12,11 @@ const analyzer = {
   },
   getAverageWordLength: (text) => {    
     const words = text.split(' ');
-    const totalLength = words.reduce((sum, word) => sum + word.length, 0);
+    let totalLength = 0;
+    for (let i = 0; i < words.length; i++) {
+      totalLength += words[i].length;
+    }
+
     return Math.round((totalLength / words.length) * 100) / 100;
   },
   getNumberCount: (text) => {
@@ -30,9 +34,7 @@ const analyzer = {
     }
     let sum = 0;
     for (let i = 0; i < numbers.length; i++) {
-      if (numbers[i] >= '0' && numbers[i] <= '9') {
-        sum += parseFloat(numbers[i], 10);
-      }
+      sum += parseFloat(numbers[i], 10);
     }
     return sum;
   },
