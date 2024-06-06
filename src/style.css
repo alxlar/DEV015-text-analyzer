@@ -1,32 +1,40 @@
 body {
-    background-color: #3284FF;
+    background-color: #2F343F;
     height: 100%;
-    font-family: Helvetica;
+    font-family: "Rubik", sans-serif;
 }
 
 header {
     text-align: center;
-    color: white;
 }
 
 header h1 {
     padding: 15px 0;
+    color: #61AFEF;
 }
 
 header p {
     padding: 0 20%;
+    color: #f0f0f0;
 }
 
 textarea[name="user-input"] {
     width: 100%;
     height: 150px;
-    background-color:white;
-    color: #002344;
+    background-color:#262B34;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
     padding: 15px;
     font-size: 16px;
-  
+    resize: none;
+    font-family: "Rubik";
+    font-weight: 100;
+}
+
+#reset-button:hover {
+    background-color: #ffffff;
+    color: #262B34;
 }
 
 section ul {
@@ -44,34 +52,37 @@ section ul li {
 
 .indicators {
     text-align: center;
-    border: 1px;
-    border-color: white;
+    border: 2px;
+    border-color: #61AFEF;
     border-radius: 10px;
     border-style: solid;
     padding: 10px;
-    color:white;
+    color: #61AFEF;
 }
 
 .text-analyzer {
     display: grid;
     grid-gap: 30px;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 10% 10px 10%;
 }
 
 
 #reset-button {
-    background-color: #002344;
-    color: white;
+    background-color: #61AFEF;
+    color: #262B34;
     font-size: 15px;
     font-weight: 100;
     border: none;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 15px 30px 15px 30px;
+    width: auto;
+    max-width: 200px;
+    margin: auto;  
 }
 
 footer {
     text-align: center;
-    color: white;
+    color: #f0f0f0;
 }

@@ -2,14 +2,14 @@ import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar los métodos del objeto `analyzer`
 
-const indicators = document.querySelectorAll('.indicators');
+//conts wordCount = document.querySelector('[data-testid="word-count"]')
+const wordCount = document.querySelector('[data-testid="word-count"]');
+const averageWordLength = document.querySelector('[data-testid="word-length-average"]');
+const characterCount = document.querySelector('[data-testid="character-count"]');
+const characterCountExcludingSpaces = document.querySelector('[data-testid="character-no-spaces-count"]');
+const numberCount = document.querySelector('[data-testid="number-count"]');
+const numberSum = document.querySelector('[data-testid="number-sum"]'); 
 
-const wordCount = indicators[0];
-const averageWordLength = indicators[1];
-const characterCount = indicators[2];
-const characterCountExcludingSpaces = indicators[3];
-const numberCount = indicators[4];
-const numberSum = indicators[5];
 
 const textarea = document.querySelector('textarea[name="user-input"]');
 
@@ -40,10 +40,10 @@ button.addEventListener('click', resetButton);
 
 function resetButton() {
   textarea.value = '';
-  wordCount.textContent = 'Cantidad de palabras';
-  averageWordLength.textContent = 'Promedio longitud';
-  characterCount.textContent = 'Cantidad de caracteres';
-  characterCountExcludingSpaces.textContent = 'Carateres sin espacios';
-  numberCount.textContent = 'Cantidad de números';
-  numberSum.textContent = 'Suma de números';
+  wordCount.textContent = 'Cantidad de palabras:';
+  averageWordLength.textContent = 'Promedio longitud:';
+  characterCount.textContent = 'Cantidad de caracteres:';
+  characterCountExcludingSpaces.textContent = 'Carateres sin espacios:';
+  numberCount.textContent = 'Cantidad de números:';
+  numberSum.textContent = 'Suma de números:';
 }
